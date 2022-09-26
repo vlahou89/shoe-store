@@ -26,28 +26,28 @@ export default function Home({ productList }) {
         <h3 className="text-center text-gold font-bold text-2xl  md:text-4xl p-10 ">
           OUR BEST SELLERS
         </h3>
-        <div className="flex flex-wrap justify-evenly m-2">
+        <div className="flex flex-wrap justify-evenly">
           {productList.map((x) => (
             <Link key={x.id} href={`/product/${x.slug}`}>
-              <div className="flex flex-col justify-center mb-2 bg-gray-100 rounded-xl border-2 border-gray-200 ">
+              <div className="w-5/12 md:w-5/12 lg:w-3/12 lg:m-1 flex flex-col justify-center mb-6 rounded-xl border-2">
                 <a href="#" className="group">
-                  <div className="mb-2 aspect-w-1 aspect-h-1 w-full p-1 overflow-hidden rounded-lg bg-gray-100 xl:aspect-w-7 xl:aspect-h-8 ">
+                  <div className="mb-2 aspect-w-1 aspect-h-1 w-full p-1 overflow-hidden rounded-lg  xl:aspect-w-7 xl:aspect-h-8 flex justify-center">
                     <img
                       src={x.url}
-                      alt="Tall slender porcelain bottle with natural clay textured body and cork stopper."
-                      className="w-80 h-80"
+                      alt=""
+                      className="h-40 w-44 md:h-80 md:w-80"
                     />
                   </div>
                   <div className="flex flex-row items-center justify-between p-2 bg-white">
-                    <h3 className="mt-1 text-sm text-gray-700">
-                      {x.productName} - {x.category}
+                    <h3 className="mt-1 text-xs md:text-lg text-gray-700">
+                      {x.productName} | {x.category}
                     </h3>
-                    <p className="mt-1 text-lg font-medium text-gray-900">
+                    <p className="mt-1 font-medium text-xs md:text-lg md:font-semibold text-gray-900">
                       {x.price}
                     </p>
                   </div>
                 </a>
-                <button className="bg-blueGray text-white p-2 rounded-xl">
+                <button className="text-gold font-bold text-xs bg-gray-300 p-2 rounded-b-xl">
                   ADD TO CART{' '}
                 </button>
               </div>
@@ -58,10 +58,10 @@ export default function Home({ productList }) {
           {' '}
           <a
             href="/Shop"
-            className="w-full md:w-6/12 bg-gold hover:bg-blueGray text-white font-bold py-2 px-4 rounded"
+            className="text-center  md:w-6/12 bg-gold  hover:bg-blueGray text-white font-bold py-2 px-4 rounded"
           >
             {' '}
-            SEE ALL PRODUCTS
+            SEE MORE PRODUCTS
           </a>
         </div>
       </div>

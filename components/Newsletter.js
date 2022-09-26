@@ -4,7 +4,7 @@ function Newsletter() {
   return (
     <div>
       <div
-        className="py-12 px-4 mx-auto max-w-screen- bg-[url('https://images.pexels.com/photos/2989593/pexels-photo-2989593.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')]
+        className="py-12 px-4 mx-auto max-w-screen- bg-[url('https://media.istockphoto.com/photos/close-up-of-woman-leg-in-running-start-to-reach-the-goal-jogging-and-picture-id1154789529?k=20&m=1154789529&s=612x612&w=0&h=qp6ItacJdFNSqtVObZmOmo1sRCXi4KbY7eDzQJnjppU=')]
       bg-cover bg-center flex justify-center items-center"
       >
         <div className="mx-auto max-w-screen-md sm:text-center">

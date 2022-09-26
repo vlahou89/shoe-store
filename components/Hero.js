@@ -10,14 +10,14 @@ function Hero() {
 "
     >
       <div className="flex flex-col justify-center items-center backdrop-brightness-50 w-screen h-screen">
-        <h1 className=" text-center text-7xl text-white font-bold drop-shadow-lg">
+        <h1 className=" text-center text-5xl md:text-7xl text-white font-bold drop-shadow-lg">
           WELCOME TO <br />
           <span className="mt-4 before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-white relative inline-block">
             <span className="relative text-blueGray">GOLDEN SHOE</span>
           </span>
         </h1>
         <a
-          className="mt-8 px-12 py-4 bg-gold hover:from-amber-600 hover:to-red-700 text-xl text-white font-semibold drop-shadow-lg "
+          className="mt-20 md:mt-32 px-6 rounded-xl py-4 bg-gold hover:from-amber-600 hover:to-red-700 text-xl md:text-2xl text-white font-semibold drop-shadow-lg "
           href="#"
         >
           SEE OUR PRODUCTS{' '}

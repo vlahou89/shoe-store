@@ -27,7 +27,7 @@ export const products = [
     category: 'MEN',
     type: 'SANDALS',
     slug: 'shoe3',
-    url: 'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQsxi8Dssisfx0hz0vqhX4L58WP8TZkUhdKd5VVlm6ExuUjt409R53qQhNIX800qTlsdJNozwqFI9XIjs_ts17wZnOlD4Lsnrx8_W8NDdT8VBGoItQhtC74cA&usqp=CAE',
+    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEeHNSv50aqwHpKyk_RA7RMriZMvq4uNZY8A&usqp=CAU',
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ export const products = [
     category: 'WOMEN',
     type: 'SANDALS',
     slug: 'shoe4',
-    url: 'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQy1MnrRIzvclueONgTqkHu9pnT-uczM1uTY73zh-VUeTbJ0z1P9esy2BLpQfy9J-e894tq5kz2shKHZslK0vidnPB-ii263ZTIzey-vj4tae1Khmr7cm9E&usqp=CAE',
+    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM2WL2hNnX4Kpk379mI1aE1HLVzg6RJMQJKw&usqp=CAU',
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ export const products = [
     category: 'MEN',
     type: 'CASUAL',
     slug: 'shoe5',
-    url: 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRm9O1yUelxQcuD_r2N8PJJ0pe0sUYPzfW-Ih9H-2qsI4gvMqH1IzSLypCZFw6zwhpC4dFOyJqiiKdIYJVKv1bJ4rLkpr_E36ipCEQjg_qmk9NpjP1Byn4t&usqp=CAE',
+    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBls0kL98X1zSmj0TgFO4iFN0dmAPlqGCyUg&usqp=CAU',
   },
   {
     id: 6,
@@ -57,6 +57,6 @@ export const products = [
     category: 'MEN',
     type: 'CASUAL',
     slug: 'shoe5',
-    url: 'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ6g3oajqFoP_2eQhBP01KQ_1cAg68FRmH13k5hK4lEnx7Zlh8DGBqBv1_oqbhkBAKBfHtgR7rUoecqqKavtmZ0UH7inDatzvFY9diqUs5FtEccHC0oTF8h&usqp=CAE',
+    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFKeO2HD6OA5gWueF_1-PaPdUnrkxmBdHRNw&usqp=CAU',
   },
 ];

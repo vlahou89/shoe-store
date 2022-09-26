@@ -1,7 +1,5 @@
 import React from 'react';
 import { useState } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
 
 function ShoppingCart() {
   const [visible, setVisible] = useState(true);
@@ -14,7 +12,6 @@ function ShoppingCart() {
   function toggleCheckout() {
     setCheckout(!checkout);
     setVisible(!visible);
-    console.log(checkout);
   }
 
   return (
@@ -36,7 +33,7 @@ function ShoppingCart() {
                       <div className="flex-1 overflow-y-auto py-6 px-4 sm:px-6">
                         <div className="flex items-start justify-between">
                           <h2
-                            className="text-lg font-medium text-gray-900"
+                            className="text-lg md:text-xl font-medium text-gray-900"
                             id="slide-over-title"
                           >
                             Shopping cart

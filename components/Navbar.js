@@ -101,7 +101,7 @@ function Navbar({ productList }) {
                     <div>
                       <a
                         href="#"
-                        className="-m-2 block p-2 font-bold text-gold"
+                        className="-m-2 block p-2 font-semibold text-gold md:text-xl"
                       >
                         CATEGORIES
                       </a>
@@ -113,7 +113,7 @@ function Navbar({ productList }) {
                         <li className="flow-root">
                           <a
                             href="#"
-                            className="-m-2 block p-2 text-gray-500 font-semibold"
+                            className="-m-2 block p-2 text-gray-500 font-semibold md:text-xl border-b-2  border-gray-20"
                           >
                             Pumps
                           </a>
@@ -122,7 +122,7 @@ function Navbar({ productList }) {
                         <li className="flow-root">
                           <a
                             href="#"
-                            className="-m-2 block p-2 text-gray-500 font-semibold"
+                            className="-m-2 block p-2 text-gray-500 font-semibold md:text-xl border-b-2  border-gray-20"
                           >
                             Stilettos
                           </a>
@@ -131,7 +131,7 @@ function Navbar({ productList }) {
                         <li className="flow-root">
                           <a
                             href="#"
-                            className="-m-2 block p-2 text-gray-500 font-semibold"
+                            className="-m-2 block p-2 text-gray-500 font-semibold md:text-xl border-b-2  border-gray-200"
                           >
                             Ankle boots
                           </a>
@@ -139,7 +139,7 @@ function Navbar({ productList }) {
                         <li className="flow-root">
                           <a
                             href="#"
-                            className="-m-2 block p-2 text-gray-500 font-semibold"
+                            className="-m-2 block p-2 text-gray-500 font-semibold md:text-xl border-b-2 border-gray-200"
                           >
                             Ankle Strap Heels{' '}
                           </a>
@@ -147,7 +147,7 @@ function Navbar({ productList }) {
                         <li className="flow-root">
                           <a
                             href="#"
-                            className="-m-2 block p-2 text-gray-500 font-semibold"
+                            className="-m-2 block p-2 text-gray-500 font-semibold md:text-xl border-b-2 border-gray-200"
                           >
                             Wedges{' '}
                           </a>
@@ -155,7 +155,7 @@ function Navbar({ productList }) {
                         <li className="flow-root">
                           <a
                             href="#"
-                            className="-m-2 block p-2 text-gray-500 font-semibold"
+                            className="-m-2 block p-2 text-gray-500 font-semibold md:text-xl border-b-2 border-gray-200"
                           >
                             Trainers{' '}
                           </a>
@@ -163,7 +163,7 @@ function Navbar({ productList }) {
                         <li className="flow-root">
                           <a
                             href="#"
-                            className="-m-2 block p-2 text-gray-500 font-semibold"
+                            className="-m-2 block p-2 text-gray-500 font-semibold md:text-xl border-b-2 border-gray-200"
                           >
                             Boots{' '}
                           </a>
@@ -171,7 +171,7 @@ function Navbar({ productList }) {
                         <li className="flow-root">
                           <a
                             href="#"
-                            className="-m-2 block p-2 text-gray-500 font-semibold"
+                            className="-m-2 block p-2 text-gray-500 font-semibold md:text-xl border-b-2 border-gray-200"
                           >
                             Loafer{' '}
                           </a>
@@ -185,7 +185,7 @@ function Navbar({ productList }) {
                   <div className="flow-root">
                     <a
                       href="#"
-                      className="-m-2 block p-2 font-medium text-gold font-bold"
+                      className="-m-2 block p-2  text-gold font-semibold md:text-xl"
                     >
                       COMPANY
                     </a>
@@ -194,7 +194,7 @@ function Navbar({ productList }) {
                   <div className="flow-root">
                     <a
                       href="#"
-                      className="-m-2 block p-2 font-medium text-gold font-bold"
+                      className="-m-2 block p-2 text-gold font-semibold md:text-xl"
                     >
                       STORES
                     </a>
@@ -205,7 +205,7 @@ function Navbar({ productList }) {
           </div>
         )}
         <header className="relative bg-blueGray">
-          <p className="flex h-10 items-center justify-center bg-gold px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
+          <p className="flex h-10 items-center justify-center bg-gold px-4 text-sm md:text-lg tracking-wide  font-medium text-white sm:px-6 lg:px-8">
             Get free delivery on orders over £100
           </p>
 
@@ -245,8 +245,8 @@ function Navbar({ productList }) {
                       className="w-auto"
                       src="/LOGO.png"
                       alt=""
-                      width={80}
-                      height={40}
+                      width={140}
+                      height={60}
                     />
                   </a>
                 </div>

@@ -1,14 +1,19 @@
-import { useRouter } from 'next/router';
 import React, { useState } from 'react';
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
 import Newsletter from '../../components/Newsletter';
+import SizeGuideModal from '../../components/SizeGuideModal';
 
 export default function Project() {
-  const router = useRouter();
+  const [modal, setModal] = useState(false);
 
+  function openModal() {
+    setModal(!modal);
+  }
   return (
     <>
+      {modal && <SizeGuideModal />}
+
       <Navbar />
       <div class="bg-white mt-20">
         <div class="pt-6">
@@ -261,9 +266,12 @@ export default function Project() {
                 <div class="mt-10">
                   <div class="flex items-center justify-between">
                     <h3 class="text-sm font-medium text-gray-900">Size</h3>
-                    <a href="#" class="text-sm font-medium text-gold">
+                    <button
+                      class="text-sm font-medium text-gold"
+                      onClick={openModal}
+                    >
                       Size guide
-                    </a>
+                    </button>
                   </div>
 
                   <fieldset class="mt-4">
