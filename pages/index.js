@@ -47,9 +47,6 @@ export default function Home({ productList }) {
                     </p>
                   </div>
                 </a>
-                <button className="text-gold font-bold text-xs bg-gray-300 p-2 rounded-b-xl">
-                  ADD TO CART{' '}
-                </button>
               </div>
             </Link>
           ))}

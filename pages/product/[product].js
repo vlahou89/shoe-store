@@ -26,7 +26,7 @@ export default function Project() {
               <li>
                 <div className="flex items-center">
                   <a
-                    href="#"
+                    href="/Shop"
                     className="mr-2 text-sm font-medium text-gray-900"
                   >
                     Men
@@ -48,7 +48,7 @@ export default function Project() {
               <li>
                 <div className="flex items-center">
                   <a
-                    href="#"
+                    href="/Shop"
                     className="mr-2 text-sm font-medium text-gray-900"
                   >
                     Trainers

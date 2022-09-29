@@ -5,6 +5,7 @@ import { useState } from 'react';
 import Newsletter from '../components/Newsletter';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
+import Pagination from '../components/Pagination';
 
 export const getStaticProps = async () => {
   return {
@@ -15,8 +16,12 @@ export const getStaticProps = async () => {
 };
 
 function Shop({ productList }) {
-  const [category, setCategory] = useState('WOMEN');
+  const [category, setCategory] = useState('ALL');
   const [type, setType] = useState('ALL');
+  const [currentPage, setCurrentPage] = useState(1);
+  const [activeTabIndex, setActiveTabIndex] = useState('ALL');
+
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   const productCategories = Array.from(
     new Set(productList.map((x) => x.category))
@@ -30,7 +35,10 @@ function Shop({ productList }) {
 
   const showAlert = (e) => {
     setCategory(e.target.value);
-    productList.filter((x) => x.category === e.target.value);
+    e.target.value === 'ALL'
+      ? productList.filter((x) => x.category)
+      : productList.filter((x) => x.category === e.target.value);
+    setActiveTabIndex(e.target.value);
   };
 
   const filtered =
@@ -40,11 +48,9 @@ function Shop({ productList }) {
 
   const subCategory = (e) => {
     setType(e.target.value);
-    e.target.value === 'ALL'
-      ? productList.filter((y) => y.category === category)
-      : productList
-          .map((y) => y.category === category)
-          .filter((x) => x.type === e.target.value);
+    productList
+      .map((y) => y.category === category)
+      .filter((x) => x.type === e.target.value);
   };
 
   return (
@@ -54,17 +60,27 @@ function Shop({ productList }) {
         <ul className="flex flex-wrap text-sm font-medium text-center text-gray-500  ">
           <li className="">
             <button
-              className=" focus:text-gold w-24 inline-block p-4 text-blue-600 bg-gray-100   dark:bg-white dark:text-blueGray"
+              className={
+                'text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal ' +
+                (activeTabIndex === 'ALL'
+                  ? 'text-gold bg-gray-100'
+                  : 'text-blueGray bg-white')
+              }
               value="ALL"
-              onClick={subCategory}
+              onClick={showAlert}
             >
               ALL
             </button>
           </li>
-          {productCategories.map((x, id) => (
-            <li className="">
+          {productCategories.map((x, category) => (
+            <li key={category}>
               <button
-                className=" focus:text-gold w-24 inline-block p-4 text-blue-600 bg-gray-100  active dark:bg-white dark:text-blueGray"
+                className={
+                  'text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal ' +
+                  (activeTabIndex === x
+                    ? 'text-gold bg-gray-100'
+                    : 'text-blueGray bg-white')
+                }
                 value={x}
                 onClick={showAlert}
               >
@@ -74,10 +90,9 @@ function Shop({ productList }) {
           ))}
         </ul>
       </div>
-
-      <div className="h-scree overflow-hidden">
-        <div className="flex justify-center bg-white text-blueGray border-b-2 bolder-gold">
-          <ul className="flex flex-wrap text-sm font-medium text-center text-gray-500 ">
+      <div className="overflow-hidden">
+        <div className="flex justify-center bg-white text-blueGray">
+          <ul className="flex h-14 flex-wrap text-sm font-medium text-center text-gray-500 ">
             <li className="">
               {productTypes.map((x, id) => (
                 <button
@@ -92,9 +107,9 @@ function Shop({ productList }) {
           </ul>
         </div>
         <div className="flex flex-wrap justify-evenly m-2">
-          {filtered.map((x) => (
+          {filtered.slice(0, 9).map((x) => (
             <Link key={x.id} href={`/product/${x.slug}`}>
-              <div className="w-5/12 md:w-5/12 lg:w-3/12 lg:m-1 flex flex-col justify-center mb-6 rounded-xl border-2">
+              <div className="w-8/10 md:w-5/12 lg:w-3/12 lg:m-1 flex flex-col justify-center mb-6 rounded-xl border-2">
                 <a href="#" className="group">
                   <div className="mb-2 aspect-w-1 aspect-h-1 w-full p-1 overflow-hidden rounded-lg  xl:aspect-w-7 xl:aspect-h-8 flex justify-center">
                     <img
@@ -118,6 +133,13 @@ function Shop({ productList }) {
               </div>
             </Link>
           ))}
+        </div>
+        <div className="flex justify-center p-4 text-center">
+          <Pagination
+            totalPosts={filtered.length}
+            paginate={paginate}
+            currentPage={currentPage}
+          />
         </div>
       </div>
 

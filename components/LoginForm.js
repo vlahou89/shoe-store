@@ -7,7 +7,7 @@ function LoginForm() {
   return (
     <div>
       <Navbar />
-      <h2 className="text-gold mt-24 text-center text-xl md:text-4xl font-bold p-10">
+      <h2 className="text-gold m-4 mt-24 text-center text-xl md:text-4xl font-bold pt-10">
         Login / Register
       </h2>
 
@@ -122,12 +122,12 @@ function LoginForm() {
                 </div>
 
                 <div className="text-center lg:text-left">
-                  <button
-                    type="button"
+                  <a
+                    href="/Checkout"
                     className="inline-block px-7 py-3 bg-gold text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-gold hover:shadow-lg focus:bg-gold focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                   >
                     Login
-                  </button>
+                  </a>
                   <p className="text-sm font-semibold mt-2 pt-1 mb-0">
                     Dont have an account?
                     <a

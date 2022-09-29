@@ -18,9 +18,12 @@ function HomeCategories() {
       >
         <div className="flex flex-col justify-center items-center">
           {' '}
-          <button className="flex flex-col justify-center hover:bg-gold hover:text-black border-gold font-bold text-xl bg-gold px-10 rounded-lg text-white h-14 items-center m-auto">
+          <a
+            href="/Shop"
+            className="flex flex-col justify-center hover:bg-gold hover:text-black border-gold font-bold text-xl bg-gold px-10 rounded-lg text-white h-14 items-center m-auto"
+          >
             SHOP MEN
-          </button>
+          </a>
         </div>
       </div>
       {/* <div className="-z-30 md:-mt-0 container mx-auto bg-gray-500 relative">
@@ -38,9 +41,12 @@ function HomeCategories() {
       >
         <div className="flex flex-col justify-center items-center">
           {' '}
-          <button className="flex flex-col justify-center hover:bg-gold hover:text-black border-gold font-bold text-xl bg-gold px-10 rounded-lg text-white h-14 items-center m-auto">
+          <a
+            href="/Shop"
+            className="flex flex-col justify-center hover:bg-gold hover:text-black border-gold font-bold text-xl bg-gold px-10 rounded-lg text-white h-14 items-center m-auto"
+          >
             SHOP WOMEN
-          </button>
+          </a>
         </div>
       </div>
     </div>

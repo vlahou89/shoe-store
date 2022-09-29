@@ -18,7 +18,7 @@ function Hero() {
         </h1>
         <a
           className="mt-20 md:mt-32 px-6 rounded-xl py-4 bg-gold hover:from-amber-600 hover:to-red-700 text-xl md:text-2xl text-white font-semibold drop-shadow-lg "
-          href="#"
+          href="/Shop"
         >
           SEE OUR PRODUCTS{' '}
         </a>
