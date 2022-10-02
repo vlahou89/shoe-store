@@ -106,33 +106,35 @@ function Shop({ productList }) {
             </li>
           </ul>
         </div>
-        <div className="flex flex-wrap justify-evenly m-2">
-          {filtered.slice(0, 9).map((x) => (
-            <Link key={x.id} href={`/product/${x.slug}`}>
-              <div className="w-8/10 md:w-5/12 lg:w-3/12 lg:m-1 flex flex-col justify-center mb-6 rounded-xl border-2">
-                <a href="#" className="group">
-                  <div className="mb-2 aspect-w-1 aspect-h-1 w-full p-1 overflow-hidden rounded-lg  xl:aspect-w-7 xl:aspect-h-8 flex justify-center">
-                    <img
-                      src={x.url}
-                      alt="Tall slender porcelain bottle with natural clay textured body and cork stopper."
-                      className="w-80 h-80"
-                    />
-                  </div>
-                  <div className="flex flex-row items-center justify-between p-2 bg-white">
-                    <h3 className="mt-1 text-xs md:text-lg text-gray-700">
-                      {x.productName} - {x.category}
-                    </h3>
-                    <p className="mt-1 font-medium text-xs md:text-lg md:font-semibold text-gray-900">
-                      {x.price}
-                    </p>
-                  </div>
-                </a>
-                <button className="text-gold font-bold text-xs bg-gray-300 p-2 rounded-b-xl">
-                  ADD TO CART{' '}
-                </button>
-              </div>
-            </Link>
-          ))}
+        <div className="flex justify-center">
+          <div className="flex flex-wrap justify-center m-2 max-w-7xl">
+            {filtered.slice(0, 9).map((x) => (
+              <Link key={x.id} href={`/product/${x.slug}`}>
+                <div className="w-8/10 md:w-5/12 lg:w-3/12 lg:m-1 flex flex-col justify-center mb-6 rounded-xl border-2">
+                  <a href="#" className="group">
+                    <div className="mb-2 aspect-w-1 aspect-h-1 w-full p-1 overflow-hidden rounded-lg  xl:aspect-w-7 xl:aspect-h-8 flex justify-center">
+                      <img
+                        src={x.url}
+                        alt="Tall slender porcelain bottle with natural clay textured body and cork stopper."
+                        className="w-80 h-80"
+                      />
+                    </div>
+                    <div className="flex flex-row items-center justify-between p-2 bg-white">
+                      <h3 className="mt-1 text-xs md:text-lg text-gray-700">
+                        {x.productName} - {x.category}
+                      </h3>
+                      <p className="mt-1 font-medium text-xs md:text-lg md:font-semibold text-gray-900">
+                        {x.price}
+                      </p>
+                    </div>
+                  </a>
+                  <button className="text-gold font-bold text-xs bg-gray-300 p-2 rounded-b-xl">
+                    ADD TO CART{' '}
+                  </button>
+                </div>
+              </Link>
+            ))}
+          </div>
         </div>
         <div className="flex justify-center p-4 text-center">
           <Pagination

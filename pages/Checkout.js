@@ -1,8 +1,8 @@
 import React from 'react';
-import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import { useState } from 'react';
 import ThankYouModal from '../components/ThankYouModal';
+import Link from 'next/link';
 
 function Checkout() {
   const [isVisible, setIsVisible] = useState(false);
@@ -29,12 +29,11 @@ function Checkout() {
           {!isVisible && (
             <div className="max-w-lg mx-auto bg-blueGray p-14 mt-32">
               <div className="flex justify-center">
-                <a
-                  href="/login"
-                  className="px-4 text-sm font-medium text-white tracking-widest "
-                >
-                  Login / Register
-                </a>
+                <Link href="/login">
+                  <a className="px-4 text-sm font-medium text-white tracking-widest ">
+                    Login / Register
+                  </a>
+                </Link>
               </div>
 
               <div className="relative mt-8">
@@ -233,13 +232,12 @@ function Checkout() {
                     Billing address is the same as shipping address
                   </label>
                 </div>
-
                 <button
                   type="button"
                   onClick={toggleModal}
                   className="bg-gold px-10 py-3 w-full mt-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700  hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
                 >
-                  Pay now{' '}
+                  Pay now
                 </button>
 
                 <p className="flex justify-center text-sm font-medium text-white mt-6">

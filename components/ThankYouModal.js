@@ -14,11 +14,10 @@ export default function ThankYouModal() {
                   Thank you for your order{' '}
                 </h4>
                 <div className="items-center bg-gray-200 p-3 w-4/6 rounded-xl m-auto mt-10 text-gold font-semibold">
-                  <Link
-                    href="/"
-                    className="w-full mt-2 font-semibold bg-gold text-white rounded-md outline-none border ring-offset-2 ring-indigo-600 focus:ring-2"
-                  >
-                    GO TO HOMEPAGE
+                  <Link href="/">
+                    <a className="w-full mt-2 font-semibold  text-gold rounded-md outline-none border ">
+                      GO TO HOMEPAGE
+                    </a>
                   </Link>
                 </div>
               </div>

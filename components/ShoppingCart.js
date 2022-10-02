@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import { useState } from 'react';
 
@@ -190,13 +191,14 @@ function ShoppingCart() {
                           Shipping and taxes calculated at checkout.
                         </p>
                         <div className="mt-6">
-                          <a
-                            href="/Checkout"
-                            className="flex items-center justify-center rounded-md border border-transparent bg-gold px-6 py-3 text-base font-medium text-white shadow-sm "
-                            onClick={toggleCheckout}
-                          >
-                            Checkout
-                          </a>
+                          <Link href="/Checkout">
+                            <a
+                              className="flex items-center justify-center rounded-md border border-transparent bg-gold px-6 py-3 text-base font-medium text-white shadow-sm "
+                              onClick={toggleCheckout}
+                            >
+                              Checkout
+                            </a>
+                          </Link>
                         </div>
                         <div className="mt-6 flex justify-center text-center text-sm text-gray-500">
                           <p>

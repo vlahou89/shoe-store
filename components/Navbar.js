@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import ShoppingCart from './ShoppingCart';
 import { products } from '../json/data';
+import Link from 'next/link';
 
 export const getStaticProps = async () => {
   return {
@@ -99,82 +100,73 @@ function Navbar({ productList }) {
                     tabIndex="0"
                   >
                     <div>
-                      <a
-                        href="#"
-                        className="-m-2 block p-2 font-semibold text-gold md:text-xl"
-                      >
-                        CATEGORIES
-                      </a>
+                      <Link href="#">
+                        <a className="-m-2 block p-2 font-semibold text-gold md:text-xl">
+                          CATEGORIES
+                        </a>
+                      </Link>
                       <ul
                         role="list"
                         aria-labelledby="women-clothing-heading-mobile"
                         className="mt-6 flex flex-col space-y-6"
                       >
                         <li className="flow-root">
-                          <a
-                            href="#"
-                            className="-m-2 block p-2 text-gray-500 font-semibold md:text-xl border-b-2  border-gray-20"
-                          >
-                            Pumps
-                          </a>
+                          <Link href="#">
+                            <a className="-m-2 block p-2 font-semibold text-gold md:text-xl">
+                              Pumps
+                            </a>
+                          </Link>
                         </li>
 
                         <li className="flow-root">
-                          <a
-                            href="#"
-                            className="-m-2 block p-2 text-gray-500 font-semibold md:text-xl border-b-2  border-gray-20"
-                          >
-                            Stilettos
-                          </a>
+                          <Link href="#">
+                            <a className="-m-2 block p-2 font-semibold text-gold md:text-xl">
+                              Stilettos
+                            </a>
+                          </Link>
                         </li>
 
                         <li className="flow-root">
-                          <a
-                            href="#"
-                            className="-m-2 block p-2 text-gray-500 font-semibold md:text-xl border-b-2  border-gray-200"
-                          >
-                            Ankle boots
-                          </a>
+                          <Link href="#">
+                            <a className="-m-2 block p-2 font-semibold text-gold md:text-xl">
+                              Ankle boots
+                            </a>
+                          </Link>
                         </li>
                         <li className="flow-root">
-                          <a
-                            href="#"
-                            className="-m-2 block p-2 text-gray-500 font-semibold md:text-xl border-b-2 border-gray-200"
-                          >
-                            Ankle Strap Heels{' '}
-                          </a>
+                          <Link href="#">
+                            <a className="-m-2 block p-2 font-semibold text-gold md:text-xl">
+                              Ankle Strap Heels
+                            </a>
+                          </Link>
                         </li>
                         <li className="flow-root">
-                          <a
-                            href="#"
-                            className="-m-2 block p-2 text-gray-500 font-semibold md:text-xl border-b-2 border-gray-200"
-                          >
-                            Wedges{' '}
-                          </a>
+                          <Link href="#">
+                            <a className="-m-2 block p-2 font-semibold text-gold md:text-xl">
+                              Wedges
+                            </a>
+                          </Link>
                         </li>
                         <li className="flow-root">
-                          <a
-                            href="#"
-                            className="-m-2 block p-2 text-gray-500 font-semibold md:text-xl border-b-2 border-gray-200"
-                          >
-                            Trainers{' '}
-                          </a>
+                          <Link href="#">
+                            <a className="-m-2 block p-2 font-semibold text-gold md:text-xl">
+                              Trainers
+                            </a>
+                          </Link>
                         </li>
                         <li className="flow-root">
-                          <a
-                            href="#"
-                            className="-m-2 block p-2 text-gray-500 font-semibold md:text-xl border-b-2 border-gray-200"
-                          >
-                            Boots{' '}
-                          </a>
+                          <Link href="#">
+                            <a className="-m-2 block p-2 font-semibold text-gold md:text-xl">
+                              Boots
+                            </a>
+                          </Link>
                         </li>
                         <li className="flow-root">
-                          <a
-                            href="#"
-                            className="-m-2 block p-2 text-gray-500 font-semibold md:text-xl border-b-2 border-gray-200"
-                          >
-                            Loafer{' '}
-                          </a>
+                          <Link href="#">
+                            <a className="-m-2 block p-2 font-semibold text-gold md:text-xl">
+                              Loafer
+                            </a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -183,21 +175,21 @@ function Navbar({ productList }) {
 
                 <div className="space-y-6 border-t border-gray-200 py-6 px-4">
                   <div className="flow-root">
-                    <a
+                    <Link
                       href="#"
                       className="-m-2 block p-2  text-gold font-semibold md:text-xl"
                     >
                       COMPANY
-                    </a>
+                    </Link>
                   </div>
 
                   <div className="flow-root">
-                    <a
+                    <Link
                       href="#"
                       className="-m-2 block p-2 text-gold font-semibold md:text-xl"
                     >
                       STORES
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -239,30 +231,29 @@ function Navbar({ productList }) {
                 </button>
 
                 <div className="mt-2 flex lg:ml-0">
-                  <a href="/">
-                    <span className="sr-only">Golden Shoe</span>
-                    <Image
-                      className="w-auto"
-                      src="/LOGO.png"
-                      alt=""
-                      width={140}
-                      height={60}
-                    />
-                  </a>
+                  <Link href="/">
+                    <div>
+                      <span className="sr-only">Golden Shoe</span>
+                      <Image
+                        className="w-auto"
+                        src="/LOGO.png"
+                        alt=""
+                        width={100}
+                        height={50}
+                      />
+                    </div>
+                  </Link>
                 </div>
 
                 <div className="hidden lg:ml-8 lg:block lg:self-stretch">
                   <div className="flex h-full space-x-8">
                     <div className="flex">
                       <div className="relative flex">
-                        <a
-                          href="/Shop"
-                          type="button"
-                          className="border-transparent text-white hover:border-b-2 hover:border-gold relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out"
-                          aria-expanded="false"
-                        >
-                          Women
-                        </a>
+                        <Link href="/Shop">
+                          <a className="border-transparent text-white hover:border-b-2 hover:border-gold relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out">
+                            Women
+                          </a>
+                        </Link>
                       </div>
 
                       <div className="absolute inset-x-0 top-full text-sm text-gray-500">
@@ -275,14 +266,11 @@ function Navbar({ productList }) {
 
                     <div className="flex">
                       <div className="relative flex">
-                        <a
-                          href="/Shop"
-                          type="button"
-                          className="border-transparent text-white hover:border-b-2 hover:border-gold relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out"
-                          aria-expanded="false"
-                        >
-                          Men
-                        </a>
+                        <Link href="/Shop">
+                          <a className="border-transparent text-white hover:border-b-2 hover:border-gold relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out">
+                            Men
+                          </a>
+                        </Link>
                       </div>
 
                       <div className="absolute inset-x-0 top-full text-sm text-gray-500">
@@ -293,64 +281,69 @@ function Navbar({ productList }) {
                       </div>
                     </div>
 
-                    <a
-                      href="#"
-                      className="border-transparent text-white hover:border-b-2 hover:border-gold relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out"
-                    >
-                      Company
-                    </a>
+                    <Link href="#">
+                      <a className="border-transparent text-white hover:border-b-2 hover:border-gold relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out">
+                        Company
+                      </a>
+                    </Link>
 
-                    <a
-                      href="#"
-                      className="border-transparent text-white hover:border-b-2 hover:border-gold relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out"
-                    >
-                      Stores
-                    </a>
+                    <Link href="#">
+                      <a className="border-transparent text-white hover:border-b-2 hover:border-gold relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out">
+                        Stores
+                      </a>
+                    </Link>
                   </div>
                 </div>
 
                 <div className="ml-auto flex items-center">
                   <div className="flex lg:ml-6">
-                    <a href="#" className=" text-gray-400 hover:text-gray-500">
-                      <span className="sr-only">Search</span>
-                      <svg
-                        className="h-6 w-6"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth="1.5"
-                        stroke="#FFFFFF"
-                        aria-hidden="true"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-                        />
-                      </svg>
-                    </a>
+                    <Link
+                      href="#"
+                      className=" text-gray-400 hover:text-gray-500"
+                    >
+                      <div>
+                        <span className="sr-only">Search</span>
+                        <svg
+                          className="h-6 w-6"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth="1.5"
+                          stroke="#FFFFFF"
+                          aria-hidden="true"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                          />
+                        </svg>
+                      </div>
+                    </Link>
                   </div>
 
                   <div className="ml-2 flow-root lg:ml-6">
-                    <a
+                    <Link
                       href="/login"
                       className="group -m-2 flex items-center p-2"
                     >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth={1.5}
-                        stroke="white"
-                        className="w-6 h-6 ml-2"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
-                        />
-                      </svg>
-                    </a>
+                      <div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth={1.5}
+                          stroke="white"
+                          className="w-6 h-6 ml-2"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+                          />
+                        </svg>
+                      </div>
+                    </Link>
                   </div>
 
                   <div className="ml-4 flow-root lg:ml-6">

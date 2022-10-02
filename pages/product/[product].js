@@ -79,15 +79,15 @@ export default function Project() {
             </ol>
           </nav>
 
-          <div className="mx-auto mt-6 max-w-2xl sm:px-6 md:grid md:max-w-7xl md:grid-cols-3 md:gap-x-8 md:px-8">
-            <div className="aspect-w-3 aspect-h-4 overflow-hidden rounded-lg md:block m-4 md:m-0">
+          <div className=" mx-auto mt-6 max-w-2xl sm:px-6 md:grid md:max-w-7xl md:grid-cols-2 lg:grid-cols-3  md:gap-x-8 md:px-8">
+            <div className="aspect-w-3 aspect-h-4 overflow-hidden rounded-lg md:block m-4 md:m-0 ">
               <img
                 src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F4a%2F92%2F4a929e66960634472b69952f7f70dca5db463539.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/fullscreen]"
                 alt="Two each of gray, white, and black shirts laying flat."
                 className="h-full w-full object-cover object-center"
               />
             </div>
-            <div className=" grid grid-cols-2 md:grid-cols-1 md:gap-y-8 mx-4 md:m-0">
+            <div className="hidden lg:grid  lg:grid-cols-1 md:gap-y-8 mx-4 md:m-0">
               <div className="aspect-w-3 aspect-h-2 rounded-lg mr-2 md:mr-0">
                 <img
                   src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F25%2Fdb%2F25db6dd8e2b6865c87aa68b8b1d6a2212bc4bd41.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
@@ -103,7 +103,7 @@ export default function Project() {
                 />
               </div>
             </div>
-            <div className="aspect-w-4 aspect-h-5  sm:rounded-lg lg:aspect-w-3 lg:aspect-h-4 mx-4 mt-2 md:m-0">
+            <div className="hidden md:aspect-w-3 md:aspect-h-4 overflow-hidden rounded-lg md:block m-4 md:m-0 ">
               <img
                 src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fdb%2F66%2Fdb6626b65e7597b36d6795f83ad8d66f0bee7535.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVEDETAIL%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D"
                 alt="Model wearing plain white basic tee."
@@ -138,9 +138,9 @@ export default function Project() {
                       aria-hidden="true"
                     >
                       <path
-                        fill-rule="evenodd"
+                        fillRule="evenodd"
                         d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
-                        clip-rule="evenodd"
+                        clipRule="evenodd"
                       />
                     </svg>
 
@@ -152,9 +152,9 @@ export default function Project() {
                       aria-hidden="true"
                     >
                       <path
-                        fill-rule="evenodd"
+                        fillRule="evenodd"
                         d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
-                        clip-rule="evenodd"
+                        clipRule="evenodd"
                       />
                     </svg>
 
@@ -166,9 +166,9 @@ export default function Project() {
                       aria-hidden="true"
                     >
                       <path
-                        fill-rule="evenodd"
+                        fillRule="evenodd"
                         d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
-                        clip-rule="evenodd"
+                        clipRule="evenodd"
                       />
                     </svg>
 
@@ -180,9 +180,9 @@ export default function Project() {
                       aria-hidden="true"
                     >
                       <path
-                        fill-rule="evenodd"
+                        fillRule="evenodd"
                         d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
-                        clip-rule="evenodd"
+                        clipRule="evenodd"
                       />
                     </svg>
 
@@ -194,9 +194,9 @@ export default function Project() {
                       aria-hidden="true"
                     >
                       <path
-                        fill-rule="evenodd"
+                        fillRule="evenodd"
                         d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
-                        clip-rule="evenodd"
+                        clipRule="evenodd"
                       />
                     </svg>
                   </div>
@@ -310,7 +310,7 @@ export default function Project() {
                               y1="100"
                               x2="100"
                               y2="0"
-                              vector-effect="non-scaling-stroke"
+                              vectorEffect="non-scaling-stroke"
                             />
                           </svg>
                         </span>
@@ -422,7 +422,7 @@ export default function Project() {
                               y1="100"
                               x2="100"
                               y2="0"
-                              vector-effect="non-scaling-stroke"
+                              vectorEffect="non-scaling-stroke"
                             />
                           </svg>
                         </span>
@@ -524,17 +524,17 @@ export default function Project() {
       <Reviews />
       {/* You may also like */}
       <div className="bg-white ">
-        <div class="mx-auto  md:py-8 px-4  pb-10">
+        <div className="mx-auto  md:py-8 px-4  pb-10">
           <h3 className="text-center text-gold font-bold text-2xl  md:text-4xl p-10 ">
             YOU MAY ALSO LIKE
           </h3>
-          <div className="flex flex-wrap justify-evenly">
-            <div className="w-5/12 md:w-5/12 lg:w-3/12 lg:m-1 flex flex-col justify-center mb-6 rounded-xl border-2">
+          <div className="flex flex-wrap mx-10 justify-center  lg:mb-6 m-auto">
+            <div className="w-full md:w-5/12 lg:w-3/12 lg:m-1 flex flex-col justify-center mb-6 rounded-xl border-2 m-6">
               <a href="#" className="group">
                 <div className="mb-2 aspect-w-1 aspect-h-1 w-full p-1 overflow-hidden rounded-lg  xl:aspect-w-7 xl:aspect-h-8 flex justify-center">
                   <img
-                    src="https://images.unsplash.com/photo-1659785568847-2c9581fe7d98?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fHRyYWluZXJzJTIwc2hvZXN8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60"
-                    className="h-40 w-44 md:h-80 md:w-80"
+                    src="https://cdn.laredoute.com/products/5/6/e/56e0aec12be508e713aa92ace1995837.jpg?imgopt=twic&twic=v1/resize=640"
+                    className="h-40 w-44 md:h-80 md:w-80 "
                   />
                 </div>
                 <div className="flex flex-row items-center justify-between p-2 bg-white">
@@ -550,65 +550,11 @@ export default function Project() {
                 ADD TO CART{' '}
               </button>
             </div>
-            <div className="w-5/12 md:w-5/12 lg:w-3/12 lg:m-1 flex flex-col justify-center mb-6 rounded-xl border-2">
+            <div className="w-full md:w-5/12 lg:w-3/12 lg:m-1 flex flex-col justify-center mb-6 rounded-xl border-2 m-6">
               <a href="#" className="group">
-                <div className="mb-2 aspect-w-1 aspect-h-1 w-full p-1 overflow-hidden rounded-lg  xl:aspect-w-7 xl:aspect-h-8 flex justify-center">
-                  <img src="https://images.unsplash.com/photo-1659785568869-aa061a0f8e87?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fHRyYWluZXJzJTIwc2hvZXN8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60" />
-                </div>
-                <div className="flex flex-row items-center justify-between p-2 bg-white">
-                  <h3 className="mt-1 text-xs md:text-lg text-gray-700">
-                    Name | Category
-                  </h3>
-                  <p className="mt-1 font-medium text-xs md:text-lg md:font-semibold text-gray-900">
-                    price{' '}
-                  </p>
-                </div>
-              </a>
-              <button className="text-gold font-bold text-xs bg-gray-300 p-2 rounded-b-xl">
-                ADD TO CART{' '}
-              </button>
-            </div>{' '}
-            <div className="w-5/12 md:w-5/12 lg:w-3/12 lg:m-1 flex flex-col justify-center mb-6 rounded-xl border-2">
-              <a href="#" className="group">
-                <div className="mb-2 aspect-w-1 aspect-h-1 w-full p-1 overflow-hidden rounded-lg  xl:aspect-w-7 xl:aspect-h-8 flex justify-center">
-                  <img src="https://images.unsplash.com/photo-1605034313761-73ea4a0cfbf3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fHRyYWluZXJzJTIwc2hvZXN8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60" />
-                </div>
-                <div className="flex flex-row items-center justify-between p-2 bg-white">
-                  <h3 className="mt-1 text-xs md:text-lg text-gray-700">
-                    Name | Category
-                  </h3>
-                  <p className="mt-1 font-medium text-xs md:text-lg md:font-semibold text-gray-900">
-                    price{' '}
-                  </p>
-                </div>
-              </a>
-              <button className="text-gold font-bold text-xs bg-gray-300 p-2 rounded-b-xl">
-                ADD TO CART{' '}
-              </button>
-            </div>{' '}
-            <div className="w-5/12 md:w-5/12 lg:w-3/12 lg:m-1 flex flex-col justify-center mb-6 rounded-xl border-2">
-              <a href="#" className="group">
-                <div className="mb-2 aspect-w-1 aspect-h-1 w-full p-1 overflow-hidden rounded-lg  xl:aspect-w-7 xl:aspect-h-8 flex justify-center">
-                  <img src="https://images.unsplash.com/photo-1631984564919-1f6b2313a71c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTN8fHRyYWluZXJzJTIwc2hvZXN8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60" />
-                </div>
-                <div className="flex flex-row items-center justify-between p-2 bg-white">
-                  <h3 className="mt-1 text-xs md:text-lg text-gray-700">
-                    Name | Category
-                  </h3>
-                  <p className="mt-1 font-medium text-xs md:text-lg md:font-semibold text-gray-900">
-                    price{' '}
-                  </p>
-                </div>
-              </a>
-              <button className="text-gold font-bold text-xs bg-gray-300 p-2 rounded-b-xl">
-                ADD TO CART{' '}
-              </button>
-            </div>{' '}
-            <div className="w-5/12 md:w-5/12 lg:w-3/12 lg:m-1 flex flex-col justify-center mb-6 rounded-xl border-2">
-              <a href="#" className="group">
-                <div className="mb-2 aspect-w-1 aspect-h-1 w-full p-1 overflow-hidden rounded-lg  xl:aspect-w-7 xl:aspect-h-8 flex justify-center">
+                <div className="mb-2 aspect-w-1 aspect-h-1 w-full p-1 overflow-hidden rounded-lg  xl:aspect-w-7 xl:aspect-h-8 flex justify-between">
                   <img
-                    src="https://images.unsplash.com/photo-1658492283686-d28b43641700?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTZ8fHRyYWluZXJzJTIwc2hvZXN8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60"
+                    src="https://cdn.laredoute.com/products/c/0/f/c0f1b162fbda071bac7c9cf58fe7b322.jpg?imgopt=twic"
                     className="h-40 w-44 md:h-80 md:w-80"
                   />
                 </div>
@@ -625,11 +571,74 @@ export default function Project() {
                 ADD TO CART{' '}
               </button>
             </div>{' '}
-            <div className="w-5/12 md:w-5/12 lg:w-3/12 lg:m-1 flex flex-col justify-center mb-6 rounded-xl border-2">
+            <div className="w-full md:w-5/12 lg:w-3/12 lg:m-1 flex flex-col justify-center mb-6 rounded-xl border-2 m-6">
+              <a href="#" className="group">
+                <div className="mb-2 aspect-w-1 aspect-h-1 w-full p-1 overflow-hidden rounded-lg  xl:aspect-w-7 xl:aspect-h-8 flex justify-between">
+                  <img
+                    src="https://cdn.laredoute.com/products/5/3/e/53e8f12e0e202907bca0b0393ab965b9.jpg?imgopt=twic"
+                    className="h-40 w-44 md:h-80 md:w-80"
+                  />
+                </div>
+                <div className="flex flex-row items-center justify-between p-2 bg-white">
+                  <h3 className="mt-1 text-xs md:text-lg text-gray-700">
+                    Name | Category
+                  </h3>
+                  <p className="mt-1 font-medium text-xs md:text-lg md:font-semibold text-gray-900">
+                    price{' '}
+                  </p>
+                </div>
+              </a>
+              <button className="text-gold font-bold text-xs bg-gray-300 p-2 rounded-b-xl">
+                ADD TO CART{' '}
+              </button>
+            </div>{' '}
+            <div className="w-full md:w-5/12 lg:w-3/12 lg:m-1 flex flex-col justify-center mb-6 rounded-xl border-2 m-6">
+              <a href="#" className="group">
+                <div className="mb-2 aspect-w-1 aspect-h-1 w-full p-1 overflow-hidden rounded-lg  xl:aspect-w-7 xl:aspect-h-8 flex justify-between">
+                  <img
+                    src="https://www.efootwear.eu/media/catalog/product/cache/small_image/300x300/0/0/0000300511985_01_pl.jpg"
+                    className="h-40 w-44 md:h-80 md:w-80"
+                  />
+                </div>
+                <div className="flex flex-row items-center justify-between p-2 bg-white">
+                  <h3 className="mt-1 text-xs md:text-lg text-gray-700">
+                    Name | Category
+                  </h3>
+                  <p className="mt-1 font-medium text-xs md:text-lg md:font-semibold text-gray-900">
+                    price{' '}
+                  </p>
+                </div>
+              </a>
+              <button className="text-gold font-bold text-xs bg-gray-300 p-2 rounded-b-xl">
+                ADD TO CART{' '}
+              </button>
+            </div>{' '}
+            <div className="w-full md:w-5/12 lg:w-3/12 lg:m-1 flex flex-col justify-center mb-6 rounded-xl border-2 m-6">
               <a href="#" className="group">
                 <div className="mb-2 aspect-w-1 aspect-h-1 w-full p-1 overflow-hidden rounded-lg  xl:aspect-w-7 xl:aspect-h-8 flex justify-center">
                   <img
-                    src="https://images.unsplash.com/photo-1573875133340-0b589f59a8c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjV8fHRyYWluZXJzJTIwc2hvZXN8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60"
+                    src="https://kunstlersports.com/wp-content/uploads/2021/02/PUMA-X-RAY-2-SQUARE-373108-17.jpg"
+                    className="h-40 w-44 md:h-80 md:w-80"
+                  />
+                </div>
+                <div className="flex flex-row items-center justify-between p-2 bg-white">
+                  <h3 className="mt-1 text-xs md:text-lg text-gray-700">
+                    Name | Category
+                  </h3>
+                  <p className="mt-1 font-medium text-xs md:text-lg md:font-semibold text-gray-900">
+                    price{' '}
+                  </p>
+                </div>
+              </a>
+              <button className="text-gold font-bold text-xs bg-gray-300 p-2 rounded-b-xl">
+                ADD TO CART{' '}
+              </button>
+            </div>{' '}
+            <div className="w-full md:w-5/12 lg:w-3/12 lg:m-1 flex flex-col justify-center mb-6 rounded-xl border-2 m-6">
+              <a href="#" className="group">
+                <div className="mb-2 aspect-w-1 aspect-h-1 w-full p-1 overflow-hidden rounded-lg  xl:aspect-w-7 xl:aspect-h-8 flex justify-center">
+                  <img
+                    src="https://www.efootwear.eu/media/catalog/product/cache/image/650x650/0/0/0000209057270_01_fp.jpg"
                     className="h-40 w-44 md:h-80 md:w-80"
                   />
                 </div>

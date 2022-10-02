@@ -22,11 +22,11 @@ export default function Home({ productList }) {
       <Hero />
       <ShippingSection />
       <HomeCategories />
-      <div class="mx-auto  md:py-8 px-4  pb-10">
+      <div className="mx-auto  md:py-8 px-4  pb-10">
         <h3 className="text-center text-gold font-bold text-2xl  md:text-4xl p-10 ">
           OUR BEST SELLERS
         </h3>
-        <div className="flex flex-wrap justify-evenly">
+        <div className="flex flex-wrap justify-evenly max-w-7xl m-auto">
           {productList.map((x) => (
             <Link key={x.id} href={`/product/${x.slug}`}>
               <div className="w-5/12 md:w-5/12 lg:w-3/12 lg:m-1 flex flex-col justify-center mb-6 rounded-xl border-2">
@@ -50,16 +50,6 @@ export default function Home({ productList }) {
               </div>
             </Link>
           ))}
-        </div>
-        <div className="flex justify-center md:p-10">
-          {' '}
-          <a
-            href="/Shop"
-            className="text-center  md:w-6/12 bg-gold  hover:bg-blueGray text-white font-bold py-2 px-4 rounded"
-          >
-            {' '}
-            SEE MORE PRODUCTS
-          </a>
         </div>
       </div>
       <Newsletter />
