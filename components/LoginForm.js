@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import Footer from './Footer';
 import Navbar from './Navbar';
@@ -122,12 +123,11 @@ function LoginForm() {
                 </div>
 
                 <div className="text-center lg:text-left">
-                  <a
-                    href="/Checkout"
-                    className="inline-block px-7 py-3 bg-gold text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-gold hover:shadow-lg focus:bg-gold focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
-                  >
-                    Login
-                  </a>
+                  <Link href="/Checkout">
+                    <a className="inline-block px-7 py-3 bg-gold text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-gold hover:shadow-lg focus:bg-gold focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">
+                      Login
+                    </a>
+                  </Link>
                   <p className="text-sm font-semibold mt-2 pt-1 mb-0">
                     Dont have an account?
                     <a

@@ -93,10 +93,10 @@ function contact() {
                 email@goldenshoe.com{' '}
               </p>
               <h2 className="mb-4 text-2xl tracking-tight font-bold text-center text-gold">
-                Email{' '}
+                Address{' '}
               </h2>
               <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
-                012456987352
+                12 Roadway, LN23 1TW <br /> London, UK
               </p>
             </div>
           </div>
