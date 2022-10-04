@@ -230,9 +230,9 @@ function Navbar({ productList }) {
                   </svg>
                 </button>
 
-                <div className="mt-2 flex lg:ml-0">
+                <div className="mt-2 flex lg:ml-0 cursor-pointer">
                   <Link href="/">
-                    <div>
+                    <a>
                       <span className="sr-only">Golden Shoe</span>
                       <Image
                         className="w-auto"
@@ -241,7 +241,7 @@ function Navbar({ productList }) {
                         width={100}
                         height={50}
                       />
-                    </div>
+                    </a>
                   </Link>
                 </div>
 
